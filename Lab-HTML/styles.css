@@ -1,0 +1,148 @@
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.companytitle {
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.navigation a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 4px 2px;
+    text-decoration: none;
+  }
+
+.navigation a:hover {
+    background-color: rgb(59, 58, 58);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+#hire {
+    background-color: rgb(59, 58, 58);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.root {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.chirpusinc {
+    height: 400px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: auto;
+}
+
+.chirpusinc p {
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    border-left: thick solid rgba(185, 182, 182, 0.5);
+    padding-left: 5%;
+}
+
+.circles {
+    width: 45%;
+    margin: auto;
+    position: relative;
+}
+
+.circles:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+.circle {
+    opacity: 0.5;
+}
+
+#biggest {
+    height: 0;
+    width: 50%;
+    background-color: rgb(247, 126, 126);
+    border-radius: 50%;
+    padding-bottom: 50%;
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+#medium {
+    height: 0;
+    width: 35%;
+    padding-bottom: 35%;
+    background-color: rgb(250, 168, 168);
+    border-radius: 50%;
+    position: absolute;
+    right: 10%;
+    bottom: 25%;
+}
+
+#smallest {
+    height: 0;
+    width: 25%;
+    padding-bottom: 25%;
+    background-color: rgb(247, 144, 242);
+    border-radius: 50%;
+    position: absolute;
+    right: 15%;
+    top: 20%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+
+footer p {
+    background-color: rgb(59, 58, 58);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 16px;
+}
