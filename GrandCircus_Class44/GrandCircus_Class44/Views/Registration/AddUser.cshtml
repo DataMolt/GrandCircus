@@ -1,0 +1,16 @@
+﻿@model RegistrationModel
+
+@{
+    ViewData["Title"] = "AddUser";
+}
+
+<h1>AddUser</h1>
+
+@if (Model.UserName != null)
+{
+    <div>Hello @Model.UserName!</div>
+}
+else
+{
+    <a asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+}
