@@ -1,0 +1,19 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h1>Checkout</h1>
+
+<form action="Continue">    
+    <button type="submit">Continue</button>
+</form>
+
+@if ((int)ViewData["Quantity"] != 0)
+{
+    <form action="Reset">
+        <button type="submit">Reset</button>
+    </form>
+}

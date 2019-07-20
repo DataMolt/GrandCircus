@@ -1,0 +1,20 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    ViewData["Title"] = "Item";
+}
+
+<h1>Item</h1>
+
+<p>
+    Session Data @HttpContextAccessor.HttpContext.Session.GetInt32("Quantity")
+</p>
+
+<form action="Add">
+    <button type="submit">Add</button>
+</form>
+
+<form action="Subtract">
+    <button type="submit">Subtract</button>
+</form>
